@@ -1,3 +1,3 @@
 # Chatbox-Python
 
-This is a chatbox by created Python
+This is a chatbox created by Python
