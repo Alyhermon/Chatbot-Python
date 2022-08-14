@@ -35,8 +35,9 @@ def check_all_messages(message):
 
         response('Hola', ['hola', 'klk', 'saludos', 'buenas'], single_response = True)
         response('Estoy bien y tu?', ['como', 'estas', 'va', 'vas', 'sientes'], required_words=['como'])
-        response('Estamos ubicados en la calle 23 numero 123', ['ubicados', 'direccion', 'donde', 'ubicacion'], single_response=True)
-        response('Siempre a la orden', ['gracias', 'te lo agradezco', 'thanks'], single_response=True)
+        response('Estamos ubicado en la caleta, por las americas', ['ubicados', 'direccion', 'donde', 'ubicacion', 'Please'], single_response=True)
+        response('Impartimos las siguientes carreras: Software, Redes de la informacion, Diseño industrial, seguridad informatica, Multimedia, Mecatronica', 
+        ['que carreras imparten?'], single_response=True)
         response('Hola', ['hola', 'klk', 'saludos', 'buenas'], single_response = True)
         response('Estoy bien y tu?', ['como', 'estas', 'va', 'vas', 'sientes'], required_words=['como'])
         response('Estamos ubicados en la calle 23 numero 123', ['ubicados', 'direccion', 'donde', 'ubicacion'], single_response=True)
@@ -52,7 +53,7 @@ def check_all_messages(message):
         return unknown() if highest_prob[best_match] < 1 else best_match
 
 def unknown():
-    response = ['puedes decirlo de nuevo?', 'No estoy seguro de lo quieres', 'búscalo en google a ver que tal'][random.randrange(3)]
+    response = ['Puedes repetirlo please?', 'No estoy seguro de lo quieres decir', 'Lo siento, mi sistema no esta reconoce esa palabra'][random.randrange(3)]
     return response
 
 while True:
