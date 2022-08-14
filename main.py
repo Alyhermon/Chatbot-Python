@@ -36,9 +36,8 @@ def check_all_messages(message):
         response('Hola', ['hola', 'klk', 'saludos', 'buenas'], single_response = True)
         response('Estoy bien y tu?', ['como', 'estas', 'va', 'vas', 'sientes'], required_words=['como'])
         response('Estamos ubicado en la caleta, por las americas', ['ubicados', 'direccion', 'donde', 'ubicacion', 'Please'], single_response=True)
-        response('Impartimos las siguientes carreras: Software, Redes de la informacion, Diseño industrial, seguridad informatica, Multimedia, Mecatronica', 
-        ['que carreras imparten?'], single_response=True)
-        response('Hola', ['hola', 'klk', 'saludos', 'buenas'], single_response = True)
+        response('Impartimos las siguientes carreras: Software, Redes de la informacion, Diseño industrial, seguridad informatica, Multimedia, Mecatronica',['que carreras imparten?'], single_response=True)
+        response('Mira, de matriculacion se pagan 6,520 pesos, pero eso nada mas es de iscripcion', ['Cuanto se paga', 'pago?', 'iscripcion', 'buenas, cuanto se paga?'], single_response = True)
         response('Estoy bien y tu?', ['como', 'estas', 'va', 'vas', 'sientes'], required_words=['como'])
         response('Estamos ubicados en la calle 23 numero 123', ['ubicados', 'direccion', 'donde', 'ubicacion'], single_response=True)
         response('Siempre a la orden', ['gracias', 'te lo agradezco', 'thanks'], single_response=True)
