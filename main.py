@@ -43,7 +43,7 @@ def check_all_messages(message):
         response('En villa mella nos paramos cerca de la sirena de la mama tingo', ['donde se paran en villa mella', 'estacionan'], single_response=True)
         response('En la 27 nos paramos en la duarte', ['donde se paran en la 27', 'estacionan'], single_response = True)
         response('Hay 4 edifcios', ['cuantos', 'edificios', 'hay', 'en el ', 'ITLA'], required_words=['como'])
-        response('Estamos ubicados en la calle 23 numero 123', ['ubicados', 'direccion', 'donde', 'ubicacion'], single_response=True)
+        response('lo tiene el gobierno del PRM', ['gobierno', 'PRM', 'Que?'], single_response=True)
         response('Siempre a la orden', ['gracias', 'te lo agradezco', 'thanks'], single_response=True)
 
         best_match = max(highest_prob, key=highest_prob.get)
